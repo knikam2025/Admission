@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A Node.js backend application using Express and MongoDB.",
+  "main": "app.js",
+  "type": "module",
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4"
+  },
+  
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix ../frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
+
